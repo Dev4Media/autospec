@@ -6,6 +6,7 @@
  */
 namespace D4m\AutoSpecExtension\Console\Command;
 
+use Lurker\Event\FilesystemEvent;
 use Lurker\ResourceWatcher;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
