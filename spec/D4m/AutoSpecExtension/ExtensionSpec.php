@@ -22,7 +22,7 @@ class ExtensionSpec extends ObjectBehavior
     function it_registers_a_console_auto_spec_when_loaded($container)
     {
         $container->setShared('console.commands.auto_spec',
-            $this->service('D4m\AustoSpecExtension\Console\Command\AutoSpecCommand', $container)
+            $this->service('D4m\AutoSpecExtension\Console\Command\AutoSpecCommand', $container)
         )->shouldBeCalled();
 
         $this->load($container);
