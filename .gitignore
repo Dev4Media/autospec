@@ -1,0 +1,6 @@
+*.tgz
+*.phar
+.idea
+bin
+vendor
+composer.lock
