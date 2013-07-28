@@ -19,12 +19,9 @@
 
     "require":      {
         "php":  ">=5.3.3",
-        "symfony/console":  "~2.1"
-    },
-
-    "require-dev":  {
-        "phpspec/phpspec": "2.0.*@dev",
-        "henrikbjorn/lurker": "1.0.*@dev"
+        "symfony/console":  "~2.1",
+        "henrikbjorn/lurker": "1.0.*@dev",
+        "phpspec/phpspec": "2.0.*@dev"
     },
 
     "autoload":     {
