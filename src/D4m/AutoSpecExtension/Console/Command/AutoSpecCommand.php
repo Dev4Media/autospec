@@ -41,15 +41,16 @@ class AutoSpecCommand extends Command
         $watcher->track('src', $src);
         $watcher->track('spec', $spec);
 
-        $watcher->addListener('src', function (FilesystemEvent $event) {
-            //echo shell_exec('bin/phpspec');
-            echo $event->getResource() . 'was' . $event->getTypeString();
+        $watcher->addListener('src', function (FilesystemEvent $event) use ($output) {
+            $output->writeln("PHPSpec AutoRunning ....");
+            $output->writeln(shell_exec('bin/phpspec'));
         });
-        /*
-        $watcher->addListener('spec', function (FilesystemEvent $event) {
-            echo shell_exec('bin/phpspec');
+
+        $watcher->addListener('spec', function (FilesystemEvent $event) use ($output) {
+            $output->writeln("PHPSpec AutoRunning ....");
+            $output->writeln(shell_exec('bin/phpspec'));
         });
-        */
+
         $watcher->start();
 
     }
