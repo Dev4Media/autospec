@@ -19,7 +19,15 @@ class AutoSpecCommand extends Command
     {
         $this
             ->setName('autospec:run')
-            ->setDescription('AutoSpec mode for continuous testing');
+            ->setDescription('AutoSpec mode for continuous testing')
+            ->addArgument(
+                'src',
+                InputArgument::OPTIONAL
+            )
+            ->addArgument(
+                'spec',
+                InputArgument::OPTIONAL
+            );
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
