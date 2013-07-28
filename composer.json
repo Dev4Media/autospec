@@ -2,7 +2,7 @@
     "name": "d4m/autospec",
     "type": "library",
     "description": "Autospec Continuous Testing tool",
-    "keywords": ["test", "spec", "bdd"],
+    "keywords": ["phpspec", "spec", "bdd"],
     "license": "MIT",
     "homepage": "http://www.dev4media.pe",
     "authors":  [
@@ -28,7 +28,9 @@
     },
 
     "autoload":     {
-        "psr-0":    {   "D4m\\AutoSpecExtension":   "src/"  }
+        "psr-0":    {
+            "D4m\\AutoSpecExtension":   "src/"
+        }
     },
 
     "extra":    {
