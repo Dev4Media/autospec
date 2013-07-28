@@ -8,8 +8,7 @@ namespace D4m\AutoSpecExtension\Console\Command;
 
 use Lurker\ResourceWatcher;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\Input;
-use Symfony\Component\Console\Output\Output;
+use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
@@ -23,7 +22,7 @@ class AutoSpecCommand extends Command
             ->setDescription('AutoSpec mode for continuous testing');
     }
 
-    protected function execute(Input $input, Output $output)
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
         $src = $input->getArgument('src');
         $spec = $input->getArgument('spec');
