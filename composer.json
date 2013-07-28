@@ -20,12 +20,8 @@
     "require":      {
         "php":  ">=5.3.3",
         "symfony/console":  "~2.1",
-        "henrikbjorn/lurker": "1.0.*@dev"
-    },
-
-    "require-dev":  {
+        "henrikbjorn/lurker": "1.0.*@dev",
         "phpspec/phpspec": "2.0.*@dev"
-
     },
 
     "autoload":     {
